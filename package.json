@@ -1,0 +1,17 @@
+{
+  "name": "svg-srpites",
+  "version": "0.0.1",
+  "description": "SVG 스프라이트 제너레이터",
+  "author": {
+    "name": "yamoo9",
+    "email": "yamoo0@euid.dev"
+  },
+  "devDependencies": {
+    "minimist": "1.2.5",
+    "svgstore": "3.0.1"
+  },
+  "scripts": {
+    "sprites": "node svg-sprites",
+    "sprites:custom": "node svg-sprites -i src -o output -f euid-sprites"
+  }
+}
