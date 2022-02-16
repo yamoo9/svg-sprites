@@ -30,6 +30,12 @@ SVG 스프라이트 생성을 위해 svg 파일이 위치한 디렉토리가 필
 npm run sprites
 ```
 
+정상적으로 파일이 생성되지 않는다면? (예: Windows 사용자) 아래 명령을 실행합니다.
+
+```sh
+npm run sprites-cli
+```
+
 ## 생성 명령 옵션
 
 필요한 경우 옵션을 설정해 입력, 출력 디렉토리 및 파일 이름을 설정할 수 있습니다.
@@ -46,12 +52,17 @@ package.json 파일에는 옵션이 설정된 명령어가 포함되어 있습�
 npm run sprites:custom
 ```
 
+```sh
+npm run sprites-cli:custom
+```
+
 package.json 파일을 열어 직접 명령을 수정할 수 있습니다.
 
 ```json
 {
   "scripts": {
-    "sprites:custom": "node svg-scripts -i src -o output -f svg-sprites"
+    "sprites:custom": "node svg-scripts -i src -o output -f svg-sprites",
+    "sprites-cli:custom": "node svg-sprites-cli -i src -o output -f euid-sprites"
   }
 }
 ```

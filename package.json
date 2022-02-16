@@ -1,6 +1,6 @@
 {
   "name": "euid-svg-srpites",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SVG 스프라이트 제너레이터",
   "author": {
     "name": "yamoo9",
@@ -11,11 +11,12 @@
     "minimist": "1.2.5",
     "rimraf": "3.0.2",
     "svg-sprite": "1.5.4",
-    "svgstore": "3.0.1",
     "vinyl": "2.2.1"
   },
   "scripts": {
     "sprites": "rimraf -rf build && node svg-sprites",
-    "sprites:custom": "node svg-sprites -i src -o output -f euid-sprites"
+    "sprites:custom": "node svg-sprites -i src -o output -f euid-sprites",
+    "sprites-cli": "node svg-sprites-cli",
+    "sprites-cli:custom": "node svg-sprites-cli -i src -o output -f euid-sprites"
   }
 }
